@@ -20,9 +20,6 @@ functions:
       - http:
           method: post
           path: api/v1/calculate
-          request:
-            template:
-              application/json: '{ "salary" : "$input.params(''result_count'')" }'
 
 custom:
   serverless-offline:
